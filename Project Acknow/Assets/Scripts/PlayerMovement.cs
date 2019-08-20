@@ -7,18 +7,17 @@ public class PlayerMovement : MonoBehaviour
 	public CharacterController2D controller2D;
 
 	float HorizontalMove = 0f;
-    float VerticalMove = 0f;
+	bool Jump = false;
     public float RunSpeed = 40f;
-    public float JumpHeight = 40f;
 
-    void Update()
+	void Update()
     {
 		HorizontalMove = Input.GetAxisRaw("Horizontal") * RunSpeed;
-        VerticalMove = Input.GetAxisRaw("Vertical") * JumpHeight;
+		Jump = Input.GetKey(KeyCode.Space);
     }
 
 	private void FixedUpdate()
 	{
-		controller2D.Move(HorizontalMove * Time.fixedDeltaTime , false, false);
+		controller2D.Move(HorizontalMove * Time.fixedDeltaTime , false, Jump);
 	}
 }
