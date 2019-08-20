@@ -7,11 +7,14 @@ public class PlayerMovement : MonoBehaviour
 	public CharacterController2D controller2D;
 
 	float HorizontalMove = 0f;
-	public float RunSpeed = 40f;
-	 
+    float VerticalMove = 0f;
+    public float RunSpeed = 40f;
+    public float JumpHeight = 40f;
+
     void Update()
     {
 		HorizontalMove = Input.GetAxisRaw("Horizontal") * RunSpeed;
+        VerticalMove = Input.GetAxisRaw("Vertical") * JumpHeight;
     }
 
 	private void FixedUpdate()
