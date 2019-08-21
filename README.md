@@ -2,8 +2,8 @@
 A 2d platformer with multiple connected dimensions
 
 # TODO
-- Fix crouching.........[x]
-- Add levels............[ ]
-- Add dimensions........[ ]
-- Add items/abilities...[ ]
-- Add a point system....[ ]
+- Fix crouching.........[√]
+- Add levels..............[x]
+- Add dimensions........[x]
+- Add items/abilities...[x]
+- Add a point system....[x]
