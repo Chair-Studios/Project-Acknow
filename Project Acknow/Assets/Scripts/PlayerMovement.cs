@@ -15,11 +15,20 @@ public class PlayerMovement : MonoBehaviour
     {
 		HorizontalMove = Input.GetAxisRaw("Horizontal") * RunSpeed;
 		Jump = Input.GetKey(KeyCode.Space);
-        Crouch = Input.GetKey(KeyCode.Escape);
+        Crouch = Input.GetKey(KeyCode.LeftShift);
+
     }
 
 	private void FixedUpdate()
 	{
+        if (Crouch)
+        {
+            Jump = false;
+        }
 		controller2D.Move(HorizontalMove * Time.fixedDeltaTime , Crouch, Jump);
-	}
+        if (Crouch == true)
+        {
+            Debug.Log("Crouching");
+        }
+    }
 }
