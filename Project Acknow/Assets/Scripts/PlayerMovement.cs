@@ -8,16 +8,23 @@ public class PlayerMovement : MonoBehaviour
 
 	float HorizontalMove = 0f;
 	bool Jump = false;
+    bool Crouch = false;
     public float RunSpeed = 40f;
 
 	void Update()
     {
 		HorizontalMove = Input.GetAxisRaw("Horizontal") * RunSpeed;
 		Jump = Input.GetKey(KeyCode.Space);
+        Crouch = Input.GetKey(KeyCode.LeftShift);
+
     }
 
 	private void FixedUpdate()
 	{
-		controller2D.Move(HorizontalMove * Time.fixedDeltaTime , false, Jump);
+        if (Crouch)
+        {
+            Jump = false;
+        }
+		controller2D.Move(HorizontalMove * Time.fixedDeltaTime , Crouch, Jump);
 	}
 }
