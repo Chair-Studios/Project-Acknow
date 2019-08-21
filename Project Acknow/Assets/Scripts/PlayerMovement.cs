@@ -26,9 +26,5 @@ public class PlayerMovement : MonoBehaviour
             Jump = false;
         }
 		controller2D.Move(HorizontalMove * Time.fixedDeltaTime , Crouch, Jump);
-        if (Crouch == true)
-        {
-            Debug.Log("Crouching");
-        }
-    }
+	}
 }

@@ -28,6 +28,7 @@ public class CharacterController2D : MonoBehaviour
 	public class BoolEvent : UnityEvent<bool> { }
 
 	public BoolEvent OnCrouchEvent;
+	public BoolEvent OnCrouchStop;
 	private bool m_wasCrouching = false;
 
 	private void Awake()
@@ -38,7 +39,10 @@ public class CharacterController2D : MonoBehaviour
 			OnLandEvent = new UnityEvent();
 
 		if (OnCrouchEvent == null)
-			OnCrouchEvent = new BoolEvent();
+			OnCrouchEvent  = new BoolEvent();
+
+		if (OnCrouchStop == null)
+			OnCrouchStop = new BoolEvent();
 	}
 
 	private void FixedUpdate()
@@ -59,7 +63,7 @@ public class CharacterController2D : MonoBehaviour
 			}
 		}
 	}
-
+ 
 
 	public void Move(float move, bool crouch, bool jump)
 	{
@@ -84,6 +88,7 @@ public class CharacterController2D : MonoBehaviour
 				{
 					m_wasCrouching = true;
 					OnCrouchEvent.Invoke(true);
+					Debug.Log("Crouch");
 				}
 
 				// Reduce the speed by the crouchSpeed multiplier
@@ -92,7 +97,8 @@ public class CharacterController2D : MonoBehaviour
 				// Disable one of the colliders when crouching
 				if (m_CrouchDisableCollider != null)
 					m_CrouchDisableCollider.enabled = false;
-			} else
+			}
+			else
 			{
 				// Enable the collider when not crouching
 				if (m_CrouchDisableCollider != null)
@@ -101,7 +107,8 @@ public class CharacterController2D : MonoBehaviour
 				if (m_wasCrouching)
 				{
 					m_wasCrouching = false;
-					OnCrouchEvent.Invoke(false);
+					OnCrouchStop.Invoke(true);
+					Debug.Log("UnCrouch");
 				}
 			}
 
