@@ -11,12 +11,12 @@ public class DimentionControler : MonoBehaviour
 		//NEED TO MAKE DIMENTION READ AND WRITEs
 		if (Input.GetKey(KeyCode.Q) && dimention > 0f)
 		{
-			dimention - 1;
+            dimention = dimention - 1;
 		}
 
 		if (Input.GetKey(KeyCode.E) && dimention < 0f)
 		{
-			dimention + 1;
+            dimention = dimention + 1;
 		}
 	}
 }
