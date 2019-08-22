@@ -9,6 +9,10 @@ A 2d platformer with multiple connected dimensions.
 - Add dimensions.............[x]
 - Add items/abilities.........[x]
 - Add a point system.........[x]
+- Add enemies......[x]
+- Make textures......[x]
+- Make SFX / music......[x]
+
 # CREDITS
 
 Game developed by Chair Entertainement:
