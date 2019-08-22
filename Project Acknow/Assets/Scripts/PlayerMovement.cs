@@ -17,14 +17,6 @@ public class PlayerMovement : MonoBehaviour
 		Jump = Input.GetKey(KeyCode.Space);
         Crouch = Input.GetKey(KeyCode.LeftShift);
 
-        // check if dead
-        if (gameObject.transform.position.y < -10)
-        {
-            Debug.Log("under world");
-            UnityEngine.SceneManagement.SceneManager.LoadScene("scene");
-
-        }
-
     }
 
 	private void FixedUpdate()
