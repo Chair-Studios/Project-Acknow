@@ -1,15 +1,22 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
 
 public class TokenControler : MonoBehaviour
 {
-	private void OnTriggerEnter2D(Collider2D collider2d)
+    
+    private void OnTriggerEnter2D(Collider2D collider2d)
 	{
 		if(collider2d.tag == ("Player"))
 		{
-			Debug.Log("Collision");
-		}
-		
-	}
+
+            FindObjectOfType<ScoreController>().Points(1f);
+            Debug.Log("Collision");
+            
+            gameObject.SetActive(false);
+        }
+
+    }
 }
