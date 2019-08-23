@@ -6,7 +6,7 @@ A 2d platformer with multiple connected dimensions.
 - Fix crouching.................[√]
 - Add a respawn system...….....[√]
 - Add levels......................[x]
-- Add dimensions.............[x]
+- Add dimensions.............[√]
 - Add items/abilities.........[x]
 - Add a point system.........[x]
 - Add enemies......[x]
