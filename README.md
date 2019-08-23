@@ -9,7 +9,8 @@ A 2d platformer with multiple connected dimensions.
 - Add dimensions.............[√]
 - Add items/abilities.........[x]
 - Add a point system.........[x]
-- Add enemies......[x]
+- Add enemies......[√]
+- Add advanced enemies......[x]
 - Make textures......[x]
 - Make SFX / music......[x]
 
@@ -27,6 +28,8 @@ tommcn
 # Code
 
 characterControler.cs was based of a verison made my Brakeys: https://github.com/Brackeys/2D-Character-Controller
+
+Pathfinding was acheived thanks to the A* Pathfinding Project : https://arongranberg.com/astar/
 
 
 
