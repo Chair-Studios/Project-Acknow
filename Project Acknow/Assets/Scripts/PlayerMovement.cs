@@ -6,7 +6,7 @@ public class PlayerMovement : MonoBehaviour
 {
 	public CharacterController2D controller2D;
 
-	float HorizontalMove = 0f;
+	float HorizontalMove;
 	bool Jump = false;
     bool Crouch = false;
     public float RunSpeed = 40f;
