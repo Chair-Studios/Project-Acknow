@@ -25,19 +25,19 @@ Game developed by Chair Entertainement:
 
  - tommcn
 
-### - Art
+### Art
 
  - kingkongdave
 
  - GXSC4952
 
-### - Music
+### Music
 
  - SuperZooper3
 
  - tommcn
 
-### - Other Code
+### Other Code
 
 characterControler.cs was based of a verison made my Brakeys: https://github.com/Brackeys/2D-Character-Controller
 
