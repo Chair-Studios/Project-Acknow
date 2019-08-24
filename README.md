@@ -12,7 +12,8 @@ A 2d platformer with multiple connected dimensions.
 - Add enemies......[√]
 - Add advanced enemies......[x]
 - Make textures......[x]
-- Make SFX / music......[x]
+- Make music......[√]
+- Make SFX......[x]
 
 # CREDITS
 
