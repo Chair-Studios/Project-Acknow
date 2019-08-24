@@ -19,20 +19,31 @@ A 2d platformer with multiple connected dimensions.
 
 Game developed by Chair Entertainement:
 
-# Main Developers: 
+### Main Developers: 
 
 SuperZooper3
 
 tommcn
 
+### Art
 
-# Code
+kingkongdave
+
+GXSC4952
+
+### Music
+
+SuperZooper3
+
+### Other Code
 
 characterControler.cs was based of a verison made my Brakeys: https://github.com/Brackeys/2D-Character-Controller
 
 Pathfinding was acheived thanks to the A* Pathfinding Project : https://arongranberg.com/astar/
 
+# WebVersion
 
+WebGL version: https://chair-entertainment.github.io/Project-Acknow/
 
 
 
