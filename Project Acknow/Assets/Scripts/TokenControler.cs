@@ -19,4 +19,9 @@ public class TokenControler : MonoBehaviour
         }
 
     }
+
+    private void Start()
+    {
+        FindObjectOfType<ScoreController>().Total();
+    }
 }
