@@ -14,7 +14,9 @@ public class PlayerMovement : MonoBehaviour
 	private void FixedUpdate()
 	{
 		HorizontalMove = Input.GetAxisRaw("Horizontal") * RunSpeed;
+
 		Jump = Input.GetKey(KeyCode.Space);
+	
 		Crouch = Input.GetKey(KeyCode.LeftShift);
 
 		controller2D.Move(HorizontalMove * Time.fixedDeltaTime , Crouch, Jump);
