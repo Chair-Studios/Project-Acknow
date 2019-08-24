@@ -15,7 +15,10 @@ namespace Pathfinding {
 	[HelpURL("http://arongranberg.com/astar/docs/class_pathfinding_1_1_a_i_destination_setter.php")]
 	public class AIDestinationSetter : VersionedMonoBehaviour {
 		/// <summary>The object that the AI should move to</summary>
-		public Transform target;
+		public Transform target1;
+		public Transform target2;
+		float Distance1;
+		float Distance2;
 		IAstarAI ai;
 
 		void OnEnable () {
@@ -24,16 +27,32 @@ namespace Pathfinding {
 			// This is enough in theory, but this script will also update the destination every
 			// frame as the destination is used for debugging and may be used for other things by other
 			// scripts as well. So it makes sense that it is up to date every frame.
-			if (ai != null) ai.onSearchPath += Update;
+			if (ai != null) ai.onSearchPath += FixedUpdate;
 		}
 
 		void OnDisable () {
-			if (ai != null) ai.onSearchPath -= Update;
+			if (ai != null) ai.onSearchPath -= FixedUpdate;
 		}
 
 		/// <summary>Updates the AI's destination every frame</summary>
-		void Update () {
-			if (target != null && ai != null) ai.destination = target.position;
+		void FixedUpdate ()
+		{
+
+			Distance1 = Vector3.Distance(target1.position, transform.position);
+
+			Distance2 = Vector3.Distance(target2.position, transform.position);
+
+			if (Distance1 < Distance2)
+				{
+					ai.destination = target1.position;
+					Debug.Log("Go For 1");
+				}
+			if (Distance1 >= Distance2)
+				{
+					ai.destination = target2.position;
+					Debug.Log("Go For 2");
+				}
+
 		}
 	}
 }
