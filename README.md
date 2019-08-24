@@ -11,7 +11,7 @@ A 2d platformer with multiple connected dimensions.
 - Add a point system.........[√]
 - Add enemies......[√]
 - Add advanced enemies......[x]
-- Make textures......[x]
+- Make textures......[√]
 - Make music......[√]
 - Make SFX......[x]
 
@@ -39,20 +39,10 @@ SuperZooper3
 
 characterControler.cs was based of a verison made my Brakeys: https://github.com/Brackeys/2D-Character-Controller
 
-Pathfinding was acheived thanks to the A* Pathfinding Project : https://arongranberg.com/astar/
+Pathfinding script based off A* Pathfinding Project : https://arongranberg.com/astar/
+
+Made  with Unity
 
 # WebVersion
 
 WebGL version: https://chair-entertainment.github.io/Project-Acknow/
-
-
-
-
-
-
-
-
-
-
-
-
