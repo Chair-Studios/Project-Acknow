@@ -39,11 +39,11 @@ Game developed by Chair Entertainement:
 
 ### Other Code
 
-characterControler.cs was based of a verison made my Brakeys: https://github.com/Brackeys/2D-Character-Controller
+ - characterControler.cs was based of a verison made my Brakeys: https://github.com/Brackeys/2D-Character-Controller
 
-Pathfinding script based off A* Pathfinding Project : https://arongranberg.com/astar/
+ - Pathfinding script based off A* Pathfinding Project : https://arongranberg.com/astar/
 
-Made  with Unity
+ - Made  with Unity
 
 # WebVersion
 
