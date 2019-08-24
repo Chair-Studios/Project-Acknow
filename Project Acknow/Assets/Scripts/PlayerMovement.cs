@@ -23,12 +23,14 @@ public class PlayerMovement : MonoBehaviour
 		controller2D.Move(HorizontalMove * Time.fixedDeltaTime , Crouch, Jump);
 	}
 
+	//Health
+	private void OnCollisionEnter2D(Collision2D collider2d)
+	{
+		if (collider2d.gameObject.tag == ("enemy"))
+		{
+			FindObjectOfType<HealthController>().healthAdd(-1f);
 
-    // health
-    private void OnTriggerEnter2D(Collider2D collider2d)
-    {
-        FindObjectOfType<HealthController>().healthAdd(-1f);
-
-        Debug.Log("enemy");
-    }
+			Debug.Log("enemy");
+		}
+	}
 }
