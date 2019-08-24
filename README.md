@@ -19,23 +19,23 @@ A 2d platformer with multiple connected dimensions.
 
 Game developed by Chair Entertainement:
 
-### - Main Developers: 
+### Main Developers: 
 
-SuperZooper3
+ - SuperZooper3
 
-tommcn
+ - tommcn
 
 ### - Art
 
-kingkongdave
+ - kingkongdave
 
-GXSC4952
+ - GXSC4952
 
 ### - Music
 
-SuperZooper3
+ - SuperZooper3
 
-tommcn
+ - tommcn
 
 ### - Other Code
 
