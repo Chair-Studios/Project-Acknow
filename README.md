@@ -11,7 +11,7 @@ A 2d platformer with multiple connected dimensions.
 - Add a point system.........[√]
 - Add enemies......[√]
 - Add advanced enemies......[x]
-- Make textures......[√]
+- Make textures......[x]
 - Make music......[√]
 - Make SFX......[x]
 
@@ -21,30 +21,38 @@ Game developed by Chair Entertainement:
 
 ### Main Developers: 
 
- - SuperZooper3
+SuperZooper3
 
- - tommcn
+tommcn
 
 ### Art
 
- - kingkongdave
+kingkongdave
 
- - GXSC4952
+GXSC4952
 
 ### Music
 
- - SuperZooper3
-
- - tommcn
+SuperZooper3
 
 ### Other Code
 
- - characterControler.cs was based of a verison made my Brakeys: https://github.com/Brackeys/2D-Character-Controller
+characterControler.cs was based of a verison made my Brakeys: https://github.com/Brackeys/2D-Character-Controller
 
- - Pathfinding script based off A* Pathfinding Project : https://arongranberg.com/astar/
-
- - Made  with Unity
+Pathfinding was acheived thanks to the A* Pathfinding Project : https://arongranberg.com/astar/
 
 # WebVersion
 
 WebGL version: https://chair-entertainment.github.io/Project-Acknow/
+
+
+
+
+
+
+
+
+
+
+
+
