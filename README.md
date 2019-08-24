@@ -8,7 +8,7 @@ A 2d platformer with multiple connected dimensions.
 - Add levels......................[x]
 - Add dimensions.............[√]
 - Add items/abilities.........[x]
-- Add a point system.........[x]
+- Add a point system.........[√]
 - Add enemies......[√]
 - Add advanced enemies......[x]
 - Make textures......[x]
