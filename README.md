@@ -18,7 +18,7 @@ A 2d platformer with multiple connected dimensions.
 
 # CREDITS
 
-## Game developed by Chair Entertainement:
+## Game developed by Chair Studios:
 
 Using the Unity Engine
 
