@@ -28,16 +28,15 @@ namespace Pathfinding {
 			// This is enough in theory, but this script will also update the destination every
 			// frame as the destination is used for debugging and may be used for other things by other
 			// scripts as well. So it makes sense that it is up to date every frame.
-			if (ai != null) ai.onSearchPath += Update;
+			if (ai != null) ai.onSearchPath += FixedUpdate;
 		}
 
 		void OnDisable () {
-			if (ai != null) ai.onSearchPath -= Update;
+			if (ai != null) ai.onSearchPath -= FixedUpdate;
 		}
 
 		/// <summary>Updates the AI's destination every frame</summary>
-		void Update () {
-
+		void FixedUpdate () {
 
 			Distance1 = Mathf.Sqrt(self.position.x - target1.position.x * self.position.x - target1.position.x + self.position.x - target1.position.y * self.position.x - target1.position.y);
 			Distance2 = Mathf.Sqrt(self.position.x - target2.position.x * self.position.x - target2.position.x + self.position.x - target2.position.y * self.position.x - target2.position.y);
@@ -58,10 +57,6 @@ namespace Pathfinding {
 					ai.destination = target1.position;
 					Debug.Log("Equal");
 				}
-
-
-
-
 		}
 	}
 }
