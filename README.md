@@ -32,7 +32,9 @@ characterControler.cs was based of a verison made my Brakeys: https://github.com
 
 Pathfinding was acheived thanks to the A* Pathfinding Project : https://arongranberg.com/astar/
 
+# See a web version
 
+WebGL version: https://chair-entertainment.github.io/Project-Acknow/
 
 
 
