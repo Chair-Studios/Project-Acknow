@@ -15,7 +15,11 @@ namespace Pathfinding {
 	[HelpURL("http://arongranberg.com/astar/docs/class_pathfinding_1_1_a_i_destination_setter.php")]
 	public class AIDestinationSetter : VersionedMonoBehaviour {
 		/// <summary>The object that the AI should move to</summary>
-		public Transform target;
+		public Transform target1;
+		public Transform target2;
+		public Transform self;
+		float Distance1;
+		float Distance2;
 		IAstarAI ai;
 
 		void OnEnable () {
@@ -33,7 +37,31 @@ namespace Pathfinding {
 
 		/// <summary>Updates the AI's destination every frame</summary>
 		void Update () {
-			if (target != null && ai != null) ai.destination = target.position;
+
+
+			Distance1 = Mathf.Sqrt(self.position.x - target1.position.x * self.position.x - target1.position.x + self.position.x - target1.position.y * self.position.x - target1.position.y);
+			Distance2 = Mathf.Sqrt(self.position.x - target2.position.x * self.position.x - target2.position.x + self.position.x - target2.position.y * self.position.x - target2.position.y);
+
+			if (Distance1 < Distance2)
+				{
+					ai.destination = target1.position;
+					Debug.Log("Go For 1");
+				}
+			if (Distance1 > Distance2)
+				{
+					ai.destination = target2.position;
+					Debug.Log("Go For 2");
+				}
+
+			if (Distance1 == Distance2)
+				{
+					ai.destination = target1.position;
+					Debug.Log("Equal");
+				}
+
+
+
+
 		}
 	}
 }
