@@ -28,7 +28,7 @@ public class PlayerMovement : MonoBehaviour
 	{
 		if (collider2d.gameObject.tag == ("enemy"))
 		{
-			FindObjectOfType<HealthController>().healthAdd(-1f);
+			FindObjectOfType<HealthController>().HealthAdd(-1f);
 
 			Debug.Log("enemy");
 		}

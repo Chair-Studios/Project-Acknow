@@ -13,10 +13,10 @@ public class HealthController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        txt.text = health.ToString();  
+        txt.text = txt.text = "Health: " + health.ToString();
     }
 
-    public void healthAdd(float hpts)
+    public void HealthAdd(float hpts)
     {
         health += hpts;
         
@@ -33,7 +33,7 @@ public class HealthController : MonoBehaviour
             health = 10;
         }
 
-        txt.text = health.ToString();
-    }
+		txt.text = "Health: " + health.ToString();
+	}
 
 }
