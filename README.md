@@ -49,7 +49,7 @@ The pathfinding system was based of the A* Pathfinding Project : https://arongra
 
 # WebVersion
 
-WebGL version: https://chair-entertainment.github.io/Project-Acknow/
+WebGL version: https://chair-studios.github.io/Project-Acknow/
 
 
 
