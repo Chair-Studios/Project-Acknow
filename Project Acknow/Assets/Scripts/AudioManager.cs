@@ -1,21 +1,15 @@
 ﻿using UnityEngine.Audio;
-using System;
 using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
 	public Sound[] sounds;
-
-	private string[] BackGroundThemes;
-
 	public static AudioManager instance;
 
-	
-
-	void Awake ()
+	void Awake()
 	{
 
-		if(instance == null)
+		if (instance == null)
 		{
 			instance = this;
 		}
@@ -36,31 +30,23 @@ public class AudioManager : MonoBehaviour
 			s.source.volume = s.volume;
 			s.source.pitch = s.pitch;
 			s.source.loop = s.loop;
-
-			if (s.BackGroundMusic == true)
-			{
-				BackGroundThemes[BackGroundThemes.Length + 1] = s.name;
-			}
 		}
 	}
 
-	System.Random rand = new System.Random();
-
 	private void Start()
 	{
-		Play(BackGroundThemes[rand.Next(0, BackGroundThemes.Length)]);
-		Debug.Log(BackGroundThemes[rand.Next(0, BackGroundThemes.Length)]);
+		Play("Song0");
 	}
 
-	public void Play (string name)
+	public void Play(string name)
 	{
 		Sound s = System.Array.Find(sounds, sound => sound.name == name);
 
-		if(s == null)
+		if (s == null)
 		{
 			Debug.LogWarning("Sound: " + name + " has not been found. Check spelling.");
 			return;
-		
+
 		}
 		s.source.Play();
 
