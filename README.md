@@ -1,6 +1,6 @@
 # Project-Acknow
 
-A 2d platformer with multiple connected dimensions.
+A 2d platformer with two connected players.
 
 # TODO
 - Fix crouching.................[√]
