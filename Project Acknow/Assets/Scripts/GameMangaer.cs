@@ -11,15 +11,9 @@ public class GameMangaer : MonoBehaviour
 	public static GameMangaer instance;
 	bool InMenu;
 
-	void Start()
+	public void PopulateList(List<string> BMusic)
 	{
-		//PopulateList;
-	}
-
-	void PopulateList()
-	{
-		List<string> songs = new List<string>() { };
-		dropdown.AddOptions(songs);
+		dropdown.AddOptions(BMusic);
 	}
 
 	private void Awake()

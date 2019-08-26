@@ -8,6 +8,11 @@ public class AudioManager : MonoBehaviour
 	string MusicName;
 	public static AudioManager instance;
 
+	[HideInInspector]
+	public List<string> BackgroundMusic = new List<string>();
+
+	int IndexPlaying;
+
 	void Awake()
 	{
 
@@ -23,7 +28,7 @@ public class AudioManager : MonoBehaviour
 
 		DontDestroyOnLoad(gameObject);
 
-		List<string> BackgroundMusic = new List<string>();
+		
 
 		foreach (Sound s in sounds)
 		{
@@ -35,17 +40,22 @@ public class AudioManager : MonoBehaviour
 			s.source.pitch = s.pitch;
 			s.source.loop = s.loop;
 
-			s.name = MusicName;
+			MusicName = s.name;
 
-			Debug.Log(MusicName);
-
-			//BackgroundMusic.Add(new string(MusicName));
+			BackgroundMusic.Add(MusicName);
 		}
 	}
 
-	private void Start()
+	public void Start()
 	{
-		Play("Song4");
+		FindObjectOfType<GameMangaer>().PopulateList(BackgroundMusic);
+	}
+
+	public void PlayDropdown(int index)
+	{
+		Stop(BackgroundMusic[IndexPlaying]);
+		Play(BackgroundMusic[index]);
+		IndexPlaying = index;
 	}
 
 	public void Play(string name)
@@ -59,6 +69,20 @@ public class AudioManager : MonoBehaviour
 
 		}
 		s.source.Play();
+
+	}
+
+	public void Stop(string name)
+	{
+		Sound s = System.Array.Find(sounds, sound => sound.name == name);
+
+		if (s == null)
+		{
+			Debug.LogWarning("Sound: " + name + " has not been found. Check spelling.");
+			return;
+
+		}
+		s.source.Stop();
 
 	}
 
