@@ -1,9 +1,8 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using Random = System.Random;
+using Random = UnityEngine.Random;
 
 public class TokenControler : MonoBehaviour
 {
@@ -23,19 +22,18 @@ public class TokenControler : MonoBehaviour
 
     private void Start()
     {
-        Random rand = new Random();
+        Color randomColor = RandomColor();
 
-        //generate random colors with a small margin (so no totaly black or totally White)
-        float red = (float)rand.NextDouble();
-        float blue = (float)rand.NextDouble();
-        float green = (float)rand.NextDouble();
-
-        Color randColor = new Color(red, blue, green, 1);
-
-
-
-        gameObject.GetComponent<Renderer>().material.color = randColor;
+        gameObject.GetComponent<Renderer>().material.color = randomColor;
+        
 
         FindObjectOfType<ScoreController>().Total();
+    }
+
+    Color RandomColor()
+    {
+        // A different random value is used for each color component (if
+        // the same is used for R, G and B, a shade of grey is produced).
+        return new Color(Random.value, Random.value, Random.value);
     }
 }
