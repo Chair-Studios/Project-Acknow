@@ -13,7 +13,7 @@ A 2d platformer with multiple connected dimensions.
 - Add a health system.........[√]
 - Add enemies......[√]
 - Add advanced enemies......[√]
-- Add menu.........[x]
+- Add menu.........[√]
 - Make more textures......[x]
 - Make music......[√]
 - Make music controller......[√]
