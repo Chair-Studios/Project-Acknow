@@ -6,7 +6,7 @@ A 2d platformer with multiple connected dimensions.
 - Fix crouching.................[√]
 - Add a respawn system...….....[√]
 - Add levels......................[x]
-- Add camera controls.............[x]
+- Add camera controls.............[√]
 - Add dimensions.............[x]
 - Add items/abilities.........[x]
 - Add a point system.........[√]
@@ -16,7 +16,7 @@ A 2d platformer with multiple connected dimensions.
 - Add menu.........[x]
 - Make textures......[x]
 - Make music......[√]
-- Make music controller......[x]
+- Make music controller......[√]
 - Make SFX......[x]
 
 # CREDITS
