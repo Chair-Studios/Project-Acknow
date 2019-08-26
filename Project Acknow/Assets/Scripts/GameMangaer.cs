@@ -1,12 +1,26 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class GameMangaer : MonoBehaviour
 {
 	public GameObject menuCanvas;
+
+	public Dropdown dropdown;
+
 	public static GameMangaer instance;
 	bool InMenu;
+
+	void Start()
+	{
+		//PopulateList;
+	}
+
+	void PopulateList()
+	{
+		List<string> songs = new List<string>() { };
+		dropdown.AddOptions(songs);
+	}
 
 	private void Awake()
 	{

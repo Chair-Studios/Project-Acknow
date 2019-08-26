@@ -1,9 +1,11 @@
-﻿using UnityEngine.Audio;
+﻿using System.Collections.Generic;
+using UnityEngine.Audio;
 using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
 	public Sound[] sounds;
+	string MusicName;
 	public static AudioManager instance;
 
 	void Awake()
@@ -21,6 +23,8 @@ public class AudioManager : MonoBehaviour
 
 		DontDestroyOnLoad(gameObject);
 
+		List<string> BackgroundMusic = new List<string>();
+
 		foreach (Sound s in sounds)
 		{
 			s.source = gameObject.AddComponent<AudioSource>();
@@ -30,6 +34,12 @@ public class AudioManager : MonoBehaviour
 			s.source.volume = s.volume;
 			s.source.pitch = s.pitch;
 			s.source.loop = s.loop;
+
+			s.name = MusicName;
+
+			Debug.Log(MusicName);
+
+			//BackgroundMusic.Add(new string(MusicName));
 		}
 	}
 
