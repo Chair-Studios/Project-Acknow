@@ -45,12 +45,12 @@ namespace Pathfinding {
 			if (Distance1 < Distance2)
 				{
 					ai.destination = target1.position;
-					Debug.Log("Go For 1");
+					//Debug.Log("Go For 1");
 				}
 			if (Distance1 >= Distance2)
 				{
 					ai.destination = target2.position;
-					Debug.Log("Go For 2");
+					//Debug.Log("Go For 2");
 				}
 
 		}

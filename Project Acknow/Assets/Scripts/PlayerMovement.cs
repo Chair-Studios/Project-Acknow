@@ -30,7 +30,7 @@ public class PlayerMovement : MonoBehaviour
 		{
 			FindObjectOfType<HealthController>().HealthAdd(-1f);
 
-			Debug.Log("enemy");
+			//Debug.Log("enemy");
         }
     }
 }

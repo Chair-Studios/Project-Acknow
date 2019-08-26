@@ -20,7 +20,7 @@ public class HealthController : MonoBehaviour
     {
         health += hpts;
         
-        Debug.Log(hpts);
+        //Debug.Log(hpts);
 
         //dead
         if (health < 1)

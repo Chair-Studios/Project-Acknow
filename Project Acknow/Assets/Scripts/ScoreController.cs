@@ -19,13 +19,13 @@ public class ScoreController : MonoBehaviour
 	{
 		score += pts;
         txt.text = "Coins: " + score.ToString() + "/" + total;
-        Debug.Log(pts);
+        //Debug.Log(pts);
     }
 
     public void Total()
     {
         total += 1;
-        Debug.Log(total);
+        //Debug.Log(total);
     }
 
     private void Update()
