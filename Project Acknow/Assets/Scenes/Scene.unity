@@ -958,8 +958,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1843731927
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 1147f7af432c65c46801009fb2bb38ba, type: 3}
   m_Color: {r: 0.9056604, g: 0.03844783, b: 0.03844783, a: 1}
@@ -1338,7 +1338,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: ea0724cc25234b943857d3db2b6e4de2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 4211c1de22dc963459fb9908b9228e05, type: 3}
   m_Color: {r: 1, g: 0.19208308, b: 0.051886797, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -1366,7 +1366,7 @@ PolygonCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 1.28, y: 1.28}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
@@ -1528,7 +1528,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0.01692772, y: -0.19044566}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -1539,7 +1539,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 2.56, y: 2.56}
+  m_Size: {x: 0.75210094, y: 1.193932}
   m_EdgeRadius: 0
 --- !u!1 &1102789317
 GameObject:
@@ -2027,8 +2027,8 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!60 &1435835586
-PolygonCollider2D:
+--- !u!61 &1435835586
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -2040,7 +2040,7 @@ PolygonCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
+  m_Offset: {x: 0, y: 0.26819056}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -2050,19 +2050,9 @@ PolygonCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Points:
-    m_Paths:
-    - - {x: -1.0666667, y: 0.5}
-      - {x: -1.0432224, y: 0.3177303}
-      - {x: -0.9212265, y: 0.25065672}
-      - {x: -0.3231554, y: -0.058741808}
-      - {x: -0.045654297, y: -0.3993675}
-      - {x: 0.057974815, y: -0.37823302}
-      - {x: 0.26124763, y: -0.05385959}
-      - {x: 0.5442724, y: 0.037472486}
-      - {x: 0.9683533, y: 0.2618692}
-      - {x: 1.0683665, y: 0.31033444}
-      - {x: 1.0666667, y: 0.5}
+  serializedVersion: 2
+  m_Size: {x: 2.1333334, y: 0.30964053}
+  m_EdgeRadius: 0
 --- !u!212 &1435835587
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2585,11 +2575,11 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 1843731927
+  m_SortingLayer: 1
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 1147f7af432c65c46801009fb2bb38ba, type: 3}
-  m_Color: {r: 0.9056604, g: 0.03844783, b: 0.03844783, a: 1}
+  m_Color: {r: 0, g: 0, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
