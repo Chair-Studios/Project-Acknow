@@ -833,7 +833,6 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
 --- !u!224 &429637605
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1081,18 +1080,18 @@ MonoBehaviour:
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
     m_Font: {fileID: 12800000, guid: 1e4ec947499c749908775aa5c91bc5e7, type: 3}
-    m_FontSize: 73
+    m_FontSize: 75
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 10
-    m_MaxSize: 126
+    m_MaxSize: 128
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Press Escacpe to return
+  m_Text: Press Escape to return
 --- !u!222 &478001914
 CanvasRenderer:
   m_ObjectHideFlags: 0
