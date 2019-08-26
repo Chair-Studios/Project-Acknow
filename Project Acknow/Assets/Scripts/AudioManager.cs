@@ -1,10 +1,16 @@
 ﻿using UnityEngine.Audio;
+using System;
 using UnityEngine;
 
 public class AudioManager : MonoBehaviour
 {
 	public Sound[] sounds;
+
+	private string[] BackGroundThemes;
+
 	public static AudioManager instance;
+
+	
 
 	void Awake ()
 	{
@@ -30,7 +36,20 @@ public class AudioManager : MonoBehaviour
 			s.source.volume = s.volume;
 			s.source.pitch = s.pitch;
 			s.source.loop = s.loop;
+
+			if (s.BackGroundMusic == true)
+			{
+				BackGroundThemes[BackGroundThemes.Length + 1] = s.name;
+			}
 		}
+	}
+
+	System.Random rand = new System.Random();
+
+	private void Start()
+	{
+		Play(BackGroundThemes[rand.Next(0, BackGroundThemes.Length)]);
+		Debug.Log(BackGroundThemes[rand.Next(0, BackGroundThemes.Length)]);
 	}
 
 	public void Play (string name)
