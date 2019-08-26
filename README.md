@@ -16,7 +16,7 @@ A 2d platformer with multiple connected dimensions.
 - Add menu.........[x]
 - Make textures......[x]
 - Make music......[√]
-- Make music controller......[x]
+- Make music controller......[√]
 - Make SFX......[x]
 
 # CREDITS
