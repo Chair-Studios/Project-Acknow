@@ -6,15 +6,10 @@ public class GameMangaer : MonoBehaviour
 {
 	public GameObject menuCanvas;
 
-	public Dropdown dropdown;
-
 	public static GameMangaer instance;
 	bool InMenu;
 
-	public void PopulateList(List<string> BMusic)
-	{
-		dropdown.AddOptions(BMusic);
-	}
+	public Dropdown dropdown;
 
 	/*private void Awake()
 	{
@@ -31,6 +26,17 @@ public class GameMangaer : MonoBehaviour
 		DontDestroyOnLoad(gameObject);
 	}
 	*/
+
+	private void Awake()
+	{
+		FindObjectOfType<AudioManager>().Populate();
+	}
+
+
+	public void PopulateList(List<string> BMusic)
+	{
+		dropdown.AddOptions(BMusic);
+	}
 
 	private void Update()
 	{

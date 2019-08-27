@@ -1,15 +1,18 @@
 ﻿using System.Collections.Generic;
 using UnityEngine.Audio;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class AudioManager : MonoBehaviour
 {
+
 	public Sound[] sounds;
 	string MusicName;
 	public static AudioManager instance;
 
 	[HideInInspector]
 	public List<string> BackgroundMusic = new List<string>();
+
 
 	int IndexPlaying;
 
@@ -46,10 +49,16 @@ public class AudioManager : MonoBehaviour
 		}
 	}
 
-	public void Start()
+	public void Populate()
 	{
 		FindObjectOfType<GameMangaer>().PopulateList(BackgroundMusic);
-		
+	}
+
+	public void Start()
+	{
+
+		FindObjectOfType<GameMangaer>().PopulateList(BackgroundMusic);
+
 		Play(BackgroundMusic[1]);
 		IndexPlaying = 1;
 	}

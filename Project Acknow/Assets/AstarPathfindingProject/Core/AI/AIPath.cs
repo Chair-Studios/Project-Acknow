@@ -48,7 +48,7 @@ namespace Pathfinding {
 	/// Rigidbody movement has to be done inside the FixedUpdate method while otherwise it is better to do it in Update.
 	///
 	/// From there a call is made to the <see cref="MovementUpdate"/> method (which in turn calls <see cref="MovementUpdateInternal)"/>.
-	/// This method contains the main bulk of the code and calculates how the AI *wants* to move. However it doesn't do any movement itself.
+	/// This method contains the main bulk of the code and calculates how the AI *wants* to move. However it doesn't do any dment itself.
 	/// Instead it returns the position and rotation it wants the AI to move to have at the end of the frame.
 	/// The <see cref="Update"/> (or <see cref="FixedUpdate)"/> method then passes these values to the <see cref="FinalizeMovement"/> method which is responsible for actually moving the character.
 	/// That method also handles things like making sure the AI doesn't fall through the ground using raycasting.

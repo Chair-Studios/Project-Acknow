@@ -13,7 +13,7 @@ public class TokenControler : MonoBehaviour
 		{
 
             FindObjectOfType<ScoreController>().Points(1f);
-            Debug.Log("Collision");
+            //Debug.Log("Collision");
             
             gameObject.SetActive(false);
         }

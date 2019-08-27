@@ -42,12 +42,12 @@ namespace Pathfinding {
 
 			Distance2 = Vector3.Distance(target2.position, transform.position);
 
-			if (Distance1 < Distance2)
+			if (Distance1 < Distance2 && Distance1 < 10)
 				{
 					ai.destination = target1.position;
 					//Debug.Log("Go For 1");
 				}
-			if (Distance1 >= Distance2)
+			if (Distance1 >= Distance2 && Distance2 < 10)
 				{
 					ai.destination = target2.position;
 					//Debug.Log("Go For 2");
