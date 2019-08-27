@@ -16,7 +16,7 @@ public class GameMangaer : MonoBehaviour
 		dropdown.AddOptions(BMusic);
 	}
 
-	private void Awake()
+	/*private void Awake()
 	{
 		if (instance == null)
 		{
@@ -30,6 +30,7 @@ public class GameMangaer : MonoBehaviour
 
 		DontDestroyOnLoad(gameObject);
 	}
+	*/
 
 	private void Update()
 	{

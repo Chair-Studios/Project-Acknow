@@ -89,7 +89,7 @@ public class CharacterController2D : MonoBehaviour
 				{
 					m_wasCrouching = true;
 					OnCrouchEvent.Invoke(true);
-					Debug.Log("Crouch");
+					//Debug.Log("Crouch");
 				}
 
 				// Reduce the speed by the crouchSpeed multiplier
@@ -109,7 +109,7 @@ public class CharacterController2D : MonoBehaviour
 				{
 					m_wasCrouching = false;
 					OnCrouchStop.Invoke(true);
-					Debug.Log("UnCrouch");
+					//Debug.Log("UnCrouch");
 				}
 			}
 

@@ -10,17 +10,24 @@ public class Enemy1AnimationControler : MonoBehaviour
 		animator = GetComponent<Animator>();
     }
 
+	public void AttackAnim(bool atk)
+	{
+		animator.SetBool("Attacking", atk);
+	}
+
 	private void OnCollisionEnter2D(Collision2D collision)
 	{
 		if (collision.gameObject.tag == "Player")
 		{
-			animator.SetBool("Attacking", true);
+			FindObjectOfType<HealthController>().HealthAdd(-1f);
+
+			AttackAnim(true);
 		}
 		
 	}
 
 	private void OnCollisionExit2D(Collision2D collision)
 	{
-		animator.SetBool("Attacking", false);
+		AttackAnim(false);
 	}
 }

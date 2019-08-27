@@ -24,13 +24,5 @@ public class PlayerMovement : MonoBehaviour
 	}
 
 	//Health
-	private void OnCollisionEnter2D(Collision2D collider2d)
-	{
-		if (collider2d.gameObject.tag == ("enemy"))
-		{
-			FindObjectOfType<HealthController>().HealthAdd(-1f);
-
-			//Debug.Log("enemy");
-        }
-    }
+	
 }

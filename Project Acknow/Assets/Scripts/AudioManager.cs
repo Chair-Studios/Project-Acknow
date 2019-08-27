@@ -49,6 +49,9 @@ public class AudioManager : MonoBehaviour
 	public void Start()
 	{
 		FindObjectOfType<GameMangaer>().PopulateList(BackgroundMusic);
+		
+		Play(BackgroundMusic[1]);
+		IndexPlaying = 1;
 	}
 
 	public void PlayDropdown(int index)
