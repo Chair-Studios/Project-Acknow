@@ -2833,7 +2833,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   version: 1
   data:
-    dataString: UEsDBBQAAAgIAACYn+vMgHrVbQIAABUFAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFlVMtymzAU/RWP1jUj8KvuriWO00UeE6eTDZtruBiNQWIkEdvJ+N97JbChrjcW577OObrwxYQ0NaZW6bUW2aPKkP0YMXdm30Z98AGPsFNyIz7xkvMuMlu4JPA5r2CFIjx0ZUZVaLVIf8pd6ZI5gY0UudLVKtthrIw1BOdQGqSQVtZVS4K+RuxIf+OlKznRKVq40yedlnx0pmOK0qIepEZBOOOch13BeBrM3fNsMu0Kx7OAu1/o6xuZllDVmDkxfZv5IvjedZhMgqVPlSS1y+LBxM1WZSlMx5TZU+2diKE2DemkhEwAKff0eDAnoECxK6zTMSx/znODtjNGw+lOaLKw7ct+qdbXCsy+5fcBZeMmhTyaemJt18f/EsatxFyr6uEyOORuiC1Eun+FUwrGDpwfwnc999D7dIByD9sS3wuUT2qtVSMzClrduNLGYHTXP161xQWm+x5vqd6ATd0bf7noyzU7DWcv/xiXotp6K6ctsCmVt9xvB2q6nt9E2O+O6VoQ6lj8MfgGu+GSdYF7oY2lUKdSOnpb1WiXylbeM6emsbHSEj3cka5RQmlPL9TG3t7hTWww9iZyD+516oZ3sctbclPi4T6f85vQizpcL8sU6vCIpnhubCkk9qRd4Il8ipWU7YoNPbmUbRqdQzoo2zUi+3e1GEQp8jCf4ZYvZ4sIxsAX8zwMZ7CMFgCQM797QpJOKF9aop09dGuyby5pzy5fmdFaQ+3XPdNwWIvPSg0sFzJXm1Qjyue2w5U4ahpCr2a2ygQZtEFrhfT3zb4SVqp0j1lybZR4pauj1ZD0XRJWiw9lHZKw2H9WEnZm579QSwMEFAAACAgAAJif61XzIDFsAAAAdwAAAAkAJABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQGrVipLLSrOzM9TslIw0TPSs9BRUEovSizIKAYKGII4pZkpIHa0UqJRcqqBYZppapKBpam5UaJuooG5WZqhoWmipZF5YmJimlIsUH1JZUGqX2JuKkRPQGJJRlpmXkpmXrqee1FmijvIaKXYWgBQSwECLQAUAAAICAAAmJ/rzIB61W0CAAAVBQAACwAkAAAAAAAAAAAAAAAAAAAAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwECLQAUAAAICAAAmJ/rVfMgMWwAAAB3AAAACQAkAAAAAAAAAAAAAAC6AgAAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsFBgAAAAACAAIAuAAAAHEDAAAAAA==
+    dataString: UEsDBBQAAAgIAACYn+tJXGhLZwIAAA4FAAALACQAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQF1VE1z2jAQ/SuMzoWxHcCht5YQ0kM+JrSTiy+LvcYaZMkjyQGS4b93JdvYoVMuyG/3rd6+XfuTcWkqTK3Sa82zR5Uh+z5i7sy+jfrgAx5hp+SGf2CX88YzW7gk8DmvYLkiPHQ0o0q0mqc/5E645IDAWvJc6XKV7XCpjDUE5yAMUkgr69iSoM8RO9LfeOEoJzpFsTt90GkRjM50TFFa1IPUaBLOAvrdhi1lPJ3MHRLHUUsdzzy1lqmAssLM9dFXmMeT25Z6czNZ+FRJXbZZweTGXauE4KYVyeyp8iZsqgI1OhcyDtSzF+Z0FMh3hXX6h9znPDdoW0M0nO64Juuaouynavwswewbce8gandNGERTr6qp+vhPwjj04Vyr8qG7OAzcJbbg6f4VTikYO3B8CN99VV7LA4g9bAW+FSif1FqrWmYUtLp21NpgdNc/XnpbFpjue7yRegXWVe96N+BuvK6Hs2//uBS83Hrnpw2wEcr77bcCNc3mFwn2O2Na2YQ6FX8M/obdcLnawD3XxlKoTZdO3lbV2qWylffMdVPbpdIS9bBChRKEPb1QHXs9xKvY/1n34N6j9vY21r0eVxQP9/lBcBV6UYfLtEyhDo9oiufaCi6xt9oFnsiopZKy2bFhSx1tU+sc0gFtV/Ps624xiFIMwnyG22AxiyMYQxDP8zCcwSKKASBnfvm4pD5BvDRCW3tobLIvLmnRus/LaK2h8vueaTis+UepTJ/JZa42qUaUz02Fi3DUdAm9mNkq42TQBq3l0g+cfSZMqHSPWXIplPhOV0erIemrJKzi78o6JGFL/z1J2Jmd/wJQSwMEFAAACAgAAJif61XzIDFsAAAAdwAAAAkAJABtZXRhLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQGrVipLLSrOzM9TslIw0TPSs9BRUEovSizIKAYKGII4pZkpIHa0UqJRcqqBYZppapKBpam5UaJuooG5WZqhoWmipZF5YmJimlIsUH1JZUGqX2JuKkRPQGJJRlpmXkpmXrqee1FmijvIaKXYWgBQSwECLQAUAAAICAAAmJ/rSVxoS2cCAAAOBQAACwAkAAAAAAAAAAAAAAAAAAAAZ3JhcGgwLmpzb24KACAAAAAAAAEAGAAAgD7V3rGdAQCAPtXesZ0BAIA+1d6xnQFQSwECLQAUAAAICAAAmJ/rVfMgMWwAAAB3AAAACQAkAAAAAAAAAAAAAAC0AgAAbWV0YS5qc29uCgAgAAAAAAABABgAAIA+1d6xnQEAgD7V3rGdAQCAPtXesZ0BUEsFBgAAAAACAAIAuAAAAGsDAAAAAA==
     upgradeData: 
     file_cachedStartup: {fileID: 0}
     data_cachedStartup: 
@@ -2865,7 +2865,7 @@ MonoBehaviour:
   heuristic: 2
   heuristicScale: 1
   threadCount: 1
-  maxFrameTime: 1
+  maxFrameTime: 10
   batchGraphUpdates: 0
   graphUpdateBatchingInterval: 0.2
   euclideanEmbedding:
@@ -4652,6 +4652,7 @@ GameObject:
   - component: {fileID: 1627562168}
   - component: {fileID: 1627562167}
   - component: {fileID: 1627562170}
+  - component: {fileID: 1627562171}
   m_Layer: 0
   m_Name: Enemy
   m_TagString: enemy
@@ -4753,6 +4754,27 @@ MonoBehaviour:
   version: 1
   target1: {fileID: 821384389}
   target2: {fileID: 1564378725}
+--- !u!50 &1627562171
+Rigidbody2D:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1627562166}
+  m_BodyType: 0
+  m_Simulated: 1
+  m_UseFullKinematicContacts: 0
+  m_UseAutoMass: 0
+  m_Mass: 1
+  m_LinearDrag: 0
+  m_AngularDrag: 0.05
+  m_GravityScale: 1
+  m_Material: {fileID: 0}
+  m_Interpolate: 0
+  m_SleepingMode: 1
+  m_CollisionDetection: 0
+  m_Constraints: 4
 --- !u!1 &1627676247
 GameObject:
   m_ObjectHideFlags: 0
@@ -4767,7 +4789,6 @@ GameObject:
   - component: {fileID: 1627676251}
   - component: {fileID: 1627676250}
   - component: {fileID: 1627676249}
-  - component: {fileID: 1627676253}
   m_Layer: 0
   m_Name: Linch (1)
   m_TagString: enemy
@@ -4861,27 +4882,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.5109213, y: 0.7672813}
   m_EdgeRadius: 0
---- !u!50 &1627676253
-Rigidbody2D:
-  serializedVersion: 4
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1627676247}
-  m_BodyType: 0
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0.05
-  m_GravityScale: 1
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 0
-  m_Constraints: 0
 --- !u!212 &1627676254
 SpriteRenderer:
   m_ObjectHideFlags: 0
