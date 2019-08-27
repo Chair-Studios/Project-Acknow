@@ -2,22 +2,13 @@
 
 A 2d platformer with two connected players.
 
+
+
 # TODO
-- Fix crouching.................[√]
-- Add a respawn system...….....[√]
-- Add levels......................[x]
-- Add camera controls.............[√]
-- Add dimensions.............[x]
-- Add items/abilities.........[x]
-- Add a point system.........[√]
-- Add a health system.........[√]
-- Add enemies......[√]
-- Add advanced enemies......[√]
-- Add menu.........[√]
-- Make more textures......[x]
-- Make music......[√]
-- Make music controller......[√]
-- Make SFX......[x]
+Now on trello:
+https://trello.com/b/S7AR0qVU/project-acknow
+
+
 
 # CREDITS
 
