@@ -20,9 +20,13 @@ public class PlayerMovement : MonoBehaviour
 	
 		Crouch = Input.GetKey(KeyCode.LeftShift);
 
+        if (Crouch)
+        {
+            Jump = false;
+        }
+
 		controller2D.Move(HorizontalMove * Time.fixedDeltaTime , Crouch, Jump);
 	}
 
-	//Health
 	
 }
