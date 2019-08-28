@@ -47,7 +47,7 @@ public class GameMangaer : MonoBehaviour
 
     private void Update()
 	{
-
+        //Debug.Log("Menu");
         if (Input.GetKeyDown(KeyCode.Escape))
 		{
            
