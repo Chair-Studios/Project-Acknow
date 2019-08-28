@@ -6,7 +6,7 @@ using UnityEngine.UI;
 public class AudioManager : MonoBehaviour
 {
 
-    float volume;
+    float volume = 1f;
 
     AudioMixerGroup GeneralMixer;
 
