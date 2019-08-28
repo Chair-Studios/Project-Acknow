@@ -1,14 +1,15 @@
 ﻿using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.Audio;
 
 public class GameMangaer : MonoBehaviour
 {
 	public GameObject menuCanvas;
-
+    public AudioMixerGroup GeneralMixer;
 	public static GameMangaer instance;
 	bool InMenu;
-
+    public Slider audioSlier;
 	public Dropdown dropdown;
 
 	/*private void Awake()
@@ -29,7 +30,8 @@ public class GameMangaer : MonoBehaviour
 
 	private void Awake()
 	{
-		FindObjectOfType<AudioManager>().Populate();
+		FindObjectOfType<AudioManager>().RePopulate(GeneralMixer, audioSlier);
+
 	}
 
 
@@ -38,11 +40,19 @@ public class GameMangaer : MonoBehaviour
 		dropdown.AddOptions(BMusic);
 	}
 
-	private void Update()
+    public void AudioSlider (float volume)
+    {
+        FindObjectOfType<AudioManager>().Volume(volume);
+    }
+
+    private void Update()
 	{
-		if (Input.GetKeyDown(KeyCode.Escape))
+
+        if (Input.GetKeyDown(KeyCode.Escape))
 		{
-			if (InMenu == false)
+           
+
+            if (InMenu == false)
 			{
 				InMenu = true;
 				menuCanvas.SetActive(true);

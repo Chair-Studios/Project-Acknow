@@ -6,7 +6,11 @@ using UnityEngine.UI;
 public class AudioManager : MonoBehaviour
 {
 
-	public Sound[] sounds;
+    float volume;
+
+    AudioMixerGroup GeneralMixer;
+
+    public Sound[] sounds;
 	string MusicName;
 	public static AudioManager instance;
 
@@ -38,7 +42,7 @@ public class AudioManager : MonoBehaviour
 			s.source = gameObject.AddComponent<AudioSource>();
 
 			s.source.clip = s.clip;
-
+            s.source.outputAudioMixerGroup = s.MixerGroup;
 			s.source.volume = s.volume;
 			s.source.pitch = s.pitch;
 			s.source.loop = s.loop;
@@ -49,9 +53,18 @@ public class AudioManager : MonoBehaviour
 		}
 	}
 
-	public void Populate()
+    public void Volume(float InVolume)
+    {
+        //Debug.Log(InVolume);
+        GeneralMixer.audioMixer.SetFloat("GeneralVol", Mathf.Log10(InVolume) * 20);
+        volume = InVolume;
+    }
+     
+    public void RePopulate(AudioMixerGroup audioMixerGroup, Slider slider)
 	{
 		FindObjectOfType<GameMangaer>().PopulateList(BackgroundMusic);
+        GeneralMixer = audioMixerGroup;
+        slider.value = volume;
 	}
 
 	public void Start()

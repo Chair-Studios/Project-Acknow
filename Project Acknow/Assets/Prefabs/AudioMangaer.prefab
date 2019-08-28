@@ -43,46 +43,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3f2e563bdf477eb43b1e93abaa9c014a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  GeneralMixer: {fileID: 24300002, guid: bf738f6429603ca4c857dea08f68262a, type: 2}
   sounds:
   - name: Song0
     clip: {fileID: 8300000, guid: 1f0ecf29d6d412747b6c4cc235790984, type: 3}
+    MixerGroup: {fileID: 24300002, guid: bf738f6429603ca4c857dea08f68262a, type: 2}
     volume: 1
     pitch: 1
     BackGroundMusic: 1
-    loop: 0
+    loop: 1
     source: {fileID: 0}
   - name: Song1
     clip: {fileID: 8300000, guid: f8d322edc44134948b28cc2a0ba2c8fd, type: 3}
+    MixerGroup: {fileID: 24300002, guid: bf738f6429603ca4c857dea08f68262a, type: 2}
     volume: 0.15
     pitch: 1
     BackGroundMusic: 1
-    loop: 0
+    loop: 1
     source: {fileID: 0}
   - name: Song2
     clip: {fileID: 8300000, guid: 81c72a8cc87bd49b7aa0940ff610fcff, type: 3}
+    MixerGroup: {fileID: 24300002, guid: bf738f6429603ca4c857dea08f68262a, type: 2}
     volume: 0.15
     pitch: 1
     BackGroundMusic: 1
-    loop: 0
+    loop: 1
     source: {fileID: 0}
   - name: Song3
     clip: {fileID: 8300000, guid: aa34e89f715a94d5db28cb3bf516319e, type: 3}
+    MixerGroup: {fileID: 24300002, guid: bf738f6429603ca4c857dea08f68262a, type: 2}
     volume: 0.15
     pitch: 1
     BackGroundMusic: 1
-    loop: 0
+    loop: 1
     source: {fileID: 0}
   - name: Song4
     clip: {fileID: 8300000, guid: d174ff1a9cc09e2489e3c190f520a0de, type: 3}
+    MixerGroup: {fileID: 24300002, guid: bf738f6429603ca4c857dea08f68262a, type: 2}
     volume: 0.15
     pitch: 1
     BackGroundMusic: 1
-    loop: 0
+    loop: 1
     source: {fileID: 0}
   - name: Song5
     clip: {fileID: 8300000, guid: 3c6001af77eddf6458ec5b81ae538579, type: 3}
+    MixerGroup: {fileID: 24300002, guid: bf738f6429603ca4c857dea08f68262a, type: 2}
     volume: 0.15
     pitch: 1
     BackGroundMusic: 1
-    loop: 0
+    loop: 1
     source: {fileID: 0}
+  BackgroundMusic: []
