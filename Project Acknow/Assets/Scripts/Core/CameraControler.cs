@@ -17,14 +17,14 @@ public class CameraControler : MonoBehaviour
 				toggle = false;
 				cam1.SetActive(true);
 				cam2.SetActive(false);
-				Debug.Log("Cam1");
+				//Debug.Log("Cam1");
 			}
 			else
 			{
 				toggle = true;
 				cam1.SetActive(false);
 				cam2.SetActive(true);
-				Debug.Log("Cam2");
+				//Debug.Log("Cam2");
 			}
 		}
 
