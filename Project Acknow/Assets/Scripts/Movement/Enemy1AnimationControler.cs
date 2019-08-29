@@ -5,7 +5,9 @@ using UnityEngine;
 public class Enemy1AnimationControler : MonoBehaviour
 {
 	Animator animator;
-    void Start()
+	bool Damaged = false;
+
+	void Start()
     {
 		animator = GetComponent<Animator>();
     }
@@ -17,17 +19,22 @@ public class Enemy1AnimationControler : MonoBehaviour
 
 	private void OnCollisionEnter2D(Collision2D collision)
 	{
-		if (collision.gameObject.tag == "Player")
+		if (collision.gameObject.tag == "Player" && Damaged == false)
 		{
-			FindObjectOfType<HealthController>().HealthAdd(-1f);
-
 			AttackAnim(true);
 		}
 		
 	}
 
+	public void Damage()
+	{
+		FindObjectOfType<HealthController>().HealthAdd(-1f);
+		Damaged = true;
+	}
+
 	private void OnCollisionExit2D(Collision2D collision)
 	{
+		Damaged = false;
 		AttackAnim(false);
 	}
 }
